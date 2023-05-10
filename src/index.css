@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  width: 1135px;
+  height: 1400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

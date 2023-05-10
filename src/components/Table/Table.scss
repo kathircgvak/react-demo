@@ -1,0 +1,76 @@
+.recent-orders {
+  height: 41px;
+  background: #7d869a 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 500px;
+
+  div:nth-of-type(1) {
+    padding-left: 10px;
+  }
+
+  .title {
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .tab-btn {
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid #7d869a;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font: normal normal normal 10px/11px Arial;
+  }
+
+  .button-active {
+    background-color: #ffffff;
+    color: #3a3a3a;
+  }
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+
+  .table-head {
+    height: 25px;
+
+    td {
+      font: normal normal normal 10px/11px Arial;
+      color: #444444;
+      padding-left: 10px;
+    }
+  }
+
+  .table-body {
+    border-top: 1px solid #d8d8d8;
+    tr:last-child {
+      background: #f2f4f7 0% 0% no-repeat padding-box;
+      border-top: 1px solid #95989a;
+      border-bottom: 1px solid #95989a;
+    }
+    td {
+      height: 70px;
+      font: normal normal normal 14px/19px Open Sans;
+      color: #333333;
+      padding-left: 10px;
+    }
+  }
+
+  .resend-btn {
+    border: 1px solid #7d869a;
+    padding: 5px 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font: normal normal normal 12px/14px Arial;
+    width: 88px;
+    height: 28px;
+    background: #7d869a 0% 0% no-repeat padding-box;
+  }
+}

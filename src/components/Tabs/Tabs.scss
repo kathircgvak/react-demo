@@ -1,0 +1,28 @@
+.tab-component-wrapper {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 1135px;
+  height: 81px;
+  align-items: end;
+  border-bottom: 2px solid #4d4d4d;
+  margin-bottom: 1px;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  .individual-tab-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 40px;
+    background: #d2d2d2 0% 0% no-repeat padding-box;
+    border-right: 2px solid #f2f2f2;
+    font: normal normal bold 12px/14px Arial;
+    color: #3a3a3a;
+    cursor: pointer;
+  }
+
+  .tab-active {
+    background: #3a3a3a 0% 0% no-repeat padding-box;
+    color: #ffffff;
+  }
+}
