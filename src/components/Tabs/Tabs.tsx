@@ -1,34 +1,7 @@
 import { useState, FC, ReactElement } from "react";
 import "./Tabs.scss";
 import classNames from "classnames";
-
-const TabsList: any = [
-  {
-    name: "ORDERS A",
-    key: 1,
-    isActive: false,
-  },
-  {
-    name: "ORDERS AA",
-    key: 2,
-    isActive: false,
-  },
-  {
-    name: "ORDERS AAA",
-    key: 3,
-    isActive: false,
-  },
-  {
-    name: "ORDERS B",
-    key: 4,
-    isActive: false,
-  },
-  {
-    name: "ORDERS C",
-    key: 5,
-    isActive: false,
-  },
-];
+import { TabsList } from "../../constants/GlobalConstants";
 
 type props = {
   handleTabIndex: (tab: number) => void;

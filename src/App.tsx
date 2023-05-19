@@ -1,4 +1,4 @@
-import Order from "./components/Order/Order";
+import Order from "./pages/Order";
 import Header from "./components/Header/Header";
 
 function App() {

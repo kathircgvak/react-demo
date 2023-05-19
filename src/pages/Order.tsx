@@ -1,36 +1,14 @@
 import { useState, useEffect } from "react";
-import Table from "../Table/Table";
-import Tabs from "../Tabs/Tabs";
+import Table from "../components/Table/Table";
+import Tabs from "../components/Tabs/Tabs";
 import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { getOrders } from "../../redux/actions";
+import { getOrders } from "../redux/actions";
 // @ts-ignore
-import _ from "lodash";
+import { orderBy } from 'lodash';
 import moment from "moment";
-
-const TableHeader = [
-  {
-    id: 1,
-    name: "DATE & TIME",
-    key: "date",
-    width: "11%",
-  },
-  { id: 2, name: "SUBJECT", key: "subject", width: "38%" },
-  {
-    id: 3,
-    name: "COMMUNICATION TYPE",
-    key: "type",
-    width: "18%",
-  },
-  {
-    id: 4,
-    name: "ORDER #",
-    key: "orderId",
-    width: "15%",
-  },
-  { id: 5, name: "", key: "button", width: "10%" },
-];
+import { OrderTableHeader } from '../constants/GlobalConstants';
 
 type OrderItems = {
   id: number;
@@ -104,7 +82,7 @@ const Order = () => {
 
   const handleSortFunction = (value: any) => {
     setFilteredOrderData(
-      _.orderBy(
+      orderBy(
         filteredOrderData,
         (item: any) => item.subject.title,
         value ? "asc" : "desc"
@@ -120,7 +98,7 @@ const Order = () => {
         }}
       />
       <Table
-        tHead={TableHeader}
+        tHead={OrderTableHeader}
         tBody={tableData}
         tabIndex={tabIndex}
         handleSort={(value: any) => handleSortFunction(value)}
